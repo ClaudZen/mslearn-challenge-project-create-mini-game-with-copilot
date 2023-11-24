@@ -1,4 +1,3 @@
-
 import random
 
 options = ['rock', 'paper', 'scissors']
@@ -28,7 +27,7 @@ def compare(user_input, machine_input):
     else:
         return results[(user_input, machine_input)]
     
-# Function that receives a user input if is not rock, paper or scisoors, ask for a valid option anc call the function again
+# Function that receives a user input if is not rock, paper or scissors, ask for a valid option and call the function again
 def validate_input_option_game():
     print(f'Please choose {options[0]}, {options[1]} or {options[2]}')
     user_input = input().lower()
@@ -36,7 +35,7 @@ def validate_input_option_game():
        return validate_input_option_game()
     return user_input
     
-# Function that receives a user input if is not y or n, ask for a valid option anc call the function again
+# Function that receives a user input if is not y or n, ask for a valid option and call the function again
 def validate_input_play_again():
     # Ask user to play again
     print(f'Do you want to play again? {options_continue[0]}/{options_continue[1]}\n')
@@ -48,8 +47,8 @@ def validate_input_play_again():
     return option
 
 
-# Write 'Welcome rock-paper-scisoors game' to the console
-print('Welcome rock-paper-scisoors game\n')
+# Write 'Welcome rock-paper-scissors game' to the console
+print('Welcome rock-paper-scissors game\n')
 
 user_wins = 0
 total_games = 0
